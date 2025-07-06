@@ -1,10 +1,21 @@
+@font-face {
+  font-family: "Berlin";
+  src: url('font/BRLNSDB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* 1. VARIABLES DE DISEÑO */
+
 :root {
-  --primary-color: #47b2e4;
-  --secondary-color: #6c757d;
+  --primary-color: #841534;
+  --secondary-color: #841534;
   --light-color: #f8f9fa;
-  --dark-color: #343a40;
-  --font-family-base: 'Poppins', sans-serif;
+  --dark-color: #2E1D63;
+  --font-family-base: "Open Sans", sans-serif;
+  --font-family-titulo: "Berlin";
 }
 
 /* 2. ESTILOS GENERALES */
@@ -15,6 +26,35 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
+  /* imagen de fondo */
+  background-image: url('img/textura-fondo.png');
+  background-size: cover;
+  /* Para que la imagen cubra todo el fondo */
+  background-attachment: fixed;
+  /* Para que quede estática al hacer scroll */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  /* Se mantiene fija como la imagen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 254, 233, 0.8);
+  mix-blend-mode: multiply;
+
+  /* Cambiá el color y la opacidad a gusto */
+  pointer-events: none;
+  /* Para que no interfiera con los clics */
+  z-index: -10;
+  /* Asegura que esté detrás del contenido */
 }
 
 /* 3. NAVBAR */
@@ -54,12 +94,17 @@ body {
   padding-top: 100px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 600;
   line-height: 1.2;
 }
 
 h1 {
+  font-family: var(--font-family-titulo);
   font-size: 3rem;
   margin-bottom: 20px;
   color: var(--dark-color);
@@ -104,6 +149,7 @@ section {
 
 section h2 {
   font-size: 2.5rem;
+  font-family: var(--font-family-titulo);
   margin-bottom: 30px;
   position: relative;
 }
@@ -235,14 +281,14 @@ img.rounded-circle {
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
   font-size: 1rem;
-  color: var(--secondary-color);
+  color: var(--dark-color);
   line-height: 1.6;
 }
 
 .lead-custom {
   font-size: 1.25rem;
   font-weight: 400;
-  color: var(--secondary-color);
+  color: var(--dark-color);
 }
 
 /* FONDOS E IMÁGENES */
@@ -253,12 +299,12 @@ img.rounded-circle {
 }
 
 .bg-overlay-light {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(5px);
 }
 
 .bg-overlay-dark {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   color: #fff;
 }
@@ -302,6 +348,7 @@ img.rounded-circle {
   h1 {
     font-size: 2.5rem;
   }
+
   .navbar-brand {
     font-size: 1.5rem;
   }
