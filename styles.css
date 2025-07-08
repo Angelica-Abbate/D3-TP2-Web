@@ -11,24 +11,47 @@
 
 :root {
   --primary-color: #841534;
-  --secondary-color: #841534;
-  --light-color: #f8f9fa;
+  --secondary-color: #66031f;
+  --light-color: #FFFEE9;
   --dark-color: #2E1D63;
   --font-family-base: "Open Sans", sans-serif;
   --font-family-titulo: "Berlin";
+}
+
+/* UTILITIES */
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.img-icon {
+  height: 36px;
+  width: fit-content;
+}
+
+.img-icon-lg {
+  height: 200px;
+  width: fit-content;
+}
+
+.pl-2 {
+  padding-left: 0.7rem;
+}
+
+.pb-3 {
+  margin-bottom: 40px;
 }
 
 /* 2. ESTILOS GENERALES */
 body {
   font-family: var(--font-family-base);
   color: #212529;
-  background-color: #ffffff;
+  background-color: var(--light-color);
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 
   /* imagen de fondo */
-  background-image: url('img/textura-fondo.png');
+  background-image: url('img/textura-fondo2.png');
   background-size: cover;
   /* Para que la imagen cubra todo el fondo */
   background-attachment: fixed;
@@ -58,6 +81,7 @@ body::before {
 }
 
 /* 3. NAVBAR */
+
 .navbar {
   background-color: transparent;
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -65,20 +89,25 @@ body::before {
 }
 
 .navbar.scrolled {
-  background-color: #fff;
+  background-color: var(--light-color);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-brand {
-  font-weight: 600;
+  font-family: var(--font-family-titulo);
+  font-weight: 700;
   font-size: 1.7rem;
   color: var(--dark-color);
+}
+
+.navbar-brand-desktop {
+  margin: 0 auto;
 }
 
 .nav-link {
   color: var(--dark-color);
   font-weight: 500;
-  margin-left: 20px;
+  margin: 0 10px;
   transition: color 0.3s;
 }
 
@@ -101,13 +130,21 @@ h4,
 h5 {
   font-weight: 600;
   line-height: 1.2;
+  color: var(--dark-color);
 }
 
 h1 {
   font-family: var(--font-family-titulo);
-  font-size: 3rem;
   margin-bottom: 20px;
-  color: var(--dark-color);
+}
+
+.hero-container {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-btn {
+  margin: 0 auto;
 }
 
 p {
@@ -126,10 +163,17 @@ p {
 .btn-dark {
   background-color: var(--primary-color);
   border: none;
+  color: var(--light-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--light-color);
 }
 
 .btn-dark:hover {
-  background-color: #369cc5;
+  background-color: var(--secondary-color);
 }
 
 .btn-outline-dark {
@@ -139,7 +183,7 @@ p {
 
 .btn-outline-dark:hover {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--light-color);
 }
 
 /* 5. SECCIONES */
@@ -150,20 +194,54 @@ section {
 section h2 {
   font-size: 2.5rem;
   font-family: var(--font-family-titulo);
-  margin-bottom: 30px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
   position: relative;
 }
 
-section h2::after {
+/* LINEA DESPUES DEL H2 */
+/* section h2::after {
   content: "";
   display: block;
   width: 60px;
   height: 3px;
   background: var(--primary-color);
   margin: 20px auto 0;
-}
+} */
 
 /* 6. CARDS */
+.swiper-slide-testimonio {
+  width: 400px;
+}
+
+.card-testimonio {
+  border: solid 2px var(--primary-color);
+  /* filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)); */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 254, 233, 0.8);
+  width: 100%;
+}
+
+.card-testimonio p {
+  text-align: left;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.card-testimonio h5 {
+  text-align: left;
+  font-size: 18px;
+}
+
+.card-testimonio img {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  /* margin-right: 10px; */
+}
+
 .card {
   border: none;
   border-radius: 8px;
@@ -207,6 +285,14 @@ section h2::after {
 }
 
 /* 8. FORMULARIO */
+.contact-container {
+  gap: 30px;
+}
+
+.contact-form {
+  flex-grow: 1;
+}
+
 form .form-control {
   border-radius: 8px;
   border: 1px solid #ced4da;
@@ -252,8 +338,9 @@ img.rounded-circle {
 
 /* TITULOS */
 .h1-custom {
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: 700;
+  text-transform: uppercase;
   line-height: 1.2;
   color: var(--dark-color);
 }
@@ -274,20 +361,26 @@ img.rounded-circle {
 
 .h4-custom {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
   color: var(--dark-color);
+}
+
+h5 {
+  font-weight: 700;
 }
 
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
   font-size: 1rem;
+  font-weight: 600;
   color: var(--dark-color);
   line-height: 1.6;
 }
 
 .lead-custom {
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--dark-color);
 }
 
@@ -339,10 +432,30 @@ img.rounded-circle {
   padding-bottom: 50px;
 }
 
+/* CARRUSEL */
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: solid 2px var(--primary-color);
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
 
 /* ============================== */
 /* MEDIA QUERIES */
 /* ============================== */
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
 
 @media (max-width: 768px) {
   h1 {
@@ -357,6 +470,18 @@ img.rounded-circle {
 @media screen and (max-width: 992px) {
   .masonry__container {
     column-count: 3;
+  }
+
+  .navbar-brand-desktop {
+    margin: 0;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 }
 
