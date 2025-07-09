@@ -198,6 +198,16 @@ p {
   color: var(--light-color);
 }
 
+.btn-link {
+  display: block;
+  color: var(--light-color);
+  font-size: small;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 6px 30px;
+}
+
 /* 5. SECCIONES */
 section {
   padding: 100px 0;
@@ -335,8 +345,29 @@ form button.btn-primary {
 /* 9. FOOTER */
 .footer {
   background-color: var(--dark-color);
-  color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+
+.footer h5 {
+  font-weight: 400;
+  color: var(--light-color);
+  text-transform: uppercase;
+  padding: 0 30px;
+  margin-top: 30px;
+}
+
+.footer-p {
+  color: var(--light-color);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 32px;
+}
+
+.footer-p a {
+  color: var(--light-color);
 }
 
 /* 10. IMÁGENES */
@@ -610,11 +641,6 @@ h5 {
 }
 
 @media screen and (max-width: 650px) {
-  .h1-custom {
-    /* margin-top: 52px; */
-    /* margin-bottom: 220px; */
-  }
-
   .hero-brindis {
     transform: translateY(calc(-50% + 76px));
   }
