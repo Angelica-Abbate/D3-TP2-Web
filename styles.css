@@ -146,13 +146,13 @@ h1 {
   margin-bottom: 20px;
 }
 
-.hero-container {
+.hero-main {
   width: 100%;
   text-align: center;
-}
-
-.hero-vertical-align {
-  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-70px);
 }
 
 .hero-btn {
@@ -333,7 +333,7 @@ form button.btn-primary {
 }
 
 /* 9. FOOTER */
-footer {
+.footer {
   background-color: var(--dark-color);
   color: #ffffff;
   font-size: 0.9rem;
@@ -475,11 +475,12 @@ h5 {
 .hero-brindis {
   pointer-events: none;
   position: absolute;
-  top: 260px;
+  top: 50%;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  transform: translateY(calc(-50% + 80px));
 }
 
 .hero-brindis>div {
@@ -521,8 +522,11 @@ h5 {
 
 @media (max-width: 1075px) {
   .h1-custom {
-    margin-top: 10px;
     font-size: 5.5rem;
+  }
+
+  .hero-brindis {
+    transform: translateY(calc(-50% + 30px));
   }
 
   .hero-brindis>div {
@@ -540,6 +544,10 @@ h5 {
   .h1-custom {
     margin-top: 18px;
     font-size: 4.5rem;
+  }
+
+  .hero-brindis {
+    transform: translateY(calc(-50%));
   }
 
   .hero-brindis>div {
@@ -567,14 +575,17 @@ h5 {
 
 @media (max-width: 768px) {
   .h1-custom {
-    margin-top: 22px;
     font-size: 3.5rem;
-    margin-bottom: 130px;
+  }
+
+  .hero-brindis {
+    transform: translateY(calc(-50% + 66px));
   }
 
   .hero-brindis>div {
     /* Tamaño Copas 1/2 */
     height: 200px;
+    transform: translateY(calc(-50% + 40px));
   }
 
   .hero-brindis-img-container {
@@ -590,13 +601,24 @@ h5 {
   .navbar-brand {
     font-size: 1.5rem;
   }
+
+  .hero-main {
+    transform: none;
+    justify-content: space-between;
+    height: 480px;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .h1-custom {
-    margin-top: 52px;
-    margin-bottom: 220px;
+    /* margin-top: 52px; */
+    /* margin-bottom: 220px; */
   }
+
+  .hero-brindis {
+    transform: translateY(calc(-50% + 76px));
+  }
+
 
   .hero-brindis>div {
     /* Tamaño Copas 1/2 */
@@ -650,13 +672,15 @@ h5 {
 }
 
 @media screen and (max-width: 510px) {
-  .h1-custom {
-    font-size: 3.5rem;
-    margin-top: -50px;
-    margin-bottom: 220px;
+  .lead-custom {
+    font-size: 1rem;
+  }
+
+  .hero-main {
+    height: 600px;
   }
 
   .hero-brindis {
-    top: 292px;
+    transform: translateY(calc(-50% + 150px));
   }
 }
