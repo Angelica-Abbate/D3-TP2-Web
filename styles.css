@@ -176,7 +176,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-70px);
+  transform: translateY(-100px);
   z-index: 100;
 }
 
@@ -639,10 +639,10 @@ img.rounded-circle {
 
 /* TITULOS */
 .h1-custom {
-  font-size: 7rem;
+  font-size: 9.6rem;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.1;
   color: var(--dark-color);
 }
 
@@ -772,18 +772,18 @@ li {
   width: 770px;
   flex-basis: 770px;
   /* Tamaño Copas 1/2 */
-  height: 540px;
+  height: 700px;
 }
 
 .hero-brindis-img-container {
   width: 100%;
   /* Tamaño Copas 2/2 */
-  height: 540px;
-  transform: translateX(-200px);
+  height: 860px;
+  transform: translateX(60px);
 }
 
 .hero-brindis-img-container-right {
-  transform: translateX(200px);
+  transform: translateX(-60px);
 }
 
 .hero-brindis-img {
@@ -799,15 +799,57 @@ li {
   /* transform: translateX(200px); */
 }
 
+@media (max-width: 2100px) {
+  .hero-brindis-img-container {
+    /* Tamaño Copas 2/2 */
+    transform: translateX(-120px);
+  }
+
+  .hero-brindis-img-container-right {
+    transform: translateX(120px);
+  }
+}
+
+@media (max-width: 1730px) {
+  .hero-brindis-img-container {
+    /* Tamaño Copas 2/2 */
+    transform: translateX(-200px);
+  }
+
+  .hero-brindis-img-container-right {
+    transform: translateX(200px);
+  }
+}
+
 @media (max-width: 1540px) {
+  .h1-custom {
+    font-size: 7rem;
+  }
+
   .hero-brindis {
     justify-content: center;
+  }
+
+  .hero-brindis>div {
+    /* Tamaño Copas 1/2 */
+    height: 600px;
+  }
+
+  .hero-brindis-img-container {
+    /* Tamaño Copas 2/2 */
+    height: 540px;
+    transform: translateX(-220px);
+  }
+
+  .hero-brindis-img-container-right {
+    transform: translateX(220px);
   }
 }
 
 @media (max-width: 1075px) {
   .h1-custom {
     font-size: 5.5rem;
+    line-height: 1.2;
   }
 
   .hero-brindis {
@@ -816,7 +858,7 @@ li {
 
   .hero-brindis>div {
     /* Tamaño Copas 1/2 */
-    height: 400px;
+    height: 460px;
   }
 
   .hero-brindis-img-container {
@@ -837,7 +879,7 @@ li {
 
   .hero-brindis>div {
     /* Tamaño Copas 1/2 */
-    height: 300px;
+    height: 360px;
   }
 
   .hero-brindis-img-container {
