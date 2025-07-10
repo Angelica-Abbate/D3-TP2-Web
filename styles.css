@@ -13,6 +13,7 @@
   --primary-color: #841534;
   --secondary-color: #66031f;
   --light-color: #FFFEE9;
+  --light-color-2: #EFE7F2;
   --dark-color: #2E1D63;
   --font-family-base: "Open Sans", sans-serif;
   --font-family-titulo: "Berlin";
@@ -59,7 +60,7 @@ body {
   scroll-behavior: smooth;
 
   /* imagen de fondo */
-  background-image: url('img/textura-fondo2.png');
+  background-image: url('img/textura-fondo.png');
   background-size: cover;
   /* Para que la imagen cubra todo el fondo */
   background-attachment: fixed;
@@ -153,6 +154,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   transform: translateY(-70px);
+  z-index: 100;
 }
 
 .hero-btn {
@@ -162,6 +164,19 @@ h1 {
 p {
   font-size: 1rem;
   color: #6c757d;
+}
+
+.hero-bg {
+  background-image: url(img/hero-bg.svg);
+  height: 86vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center bottom;
+  /* opacity: 0.7; */
+  mix-blend-mode: multiply;
 }
 
 /* Botones */
@@ -235,6 +250,62 @@ section h2 {
   height: auto;
 }
 
+.suscripcion-bg {
+  /* background-color: var(--light-color-2); */
+  /* mix-blend-mode: multiply; */
+  width: 100%;
+
+  /* background-image: url(img/suscripciones-bg.svg);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-position: center bottom;
+  /* opacity: 0.7; */
+  /* mix-blend-mode: multiply; */
+}
+
+.subscription-bg-element {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--light-color-2);
+  mix-blend-mode: multiply;
+  width: 100%;
+  display: block;
+  content: "";
+}
+
+.subscription-bg-element::before {
+  width: 100%;
+  display: block;
+  content: "";
+  position: absolute;
+  top: -120px;
+  height: 120px;
+  background-image: url(img/suscripciones-bg-1.svg);
+  background-size: auto 100%;
+  /* se puede cambiar */
+  background-position: center top;
+}
+
+.subscription-bg-element::after {
+  width: 100%;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  height: 120px;
+  background-image: url(img/suscripciones-bg-2.svg);
+  background-size: auto 100%;
+  /* se puede cambiar */
+  background-position: center bottom;
+}
+
 /* LINEA DESPUES DEL H2 */
 /* section h2::after {
   content: "";
@@ -279,6 +350,7 @@ section h2 {
 }
 
 .card {
+  position: relative;
   border: none;
   border-radius: 8px;
   overflow: hidden;
@@ -512,6 +584,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   transform: translateY(calc(-50% + 80px));
+  z-index: 200;
 }
 
 .hero-brindis>div {
