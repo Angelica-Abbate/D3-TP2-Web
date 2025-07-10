@@ -28,6 +28,7 @@
   --secondary-color: #3f0314;
   --light-color: #fffef3;
   --light-color-2: #dacbff;
+  --light-color-bg: rgba(191, 174, 233, 0.5);
   --dark-color: #2E1D63;
   --font-family-base: "Open Sans", sans-serif;
   --font-family-titulo: "Berlin";
@@ -394,10 +395,10 @@ section h2 {
 }
 
 .card-testimonio {
-  border: solid 2px var(--primary-color);
+  /* border: solid 2px var(--primary-color); */
   /* filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)); */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 254, 233, 0.8);
+  background-color: var(--light-color-bg);
   width: 100%;
 }
 
@@ -412,6 +413,12 @@ section h2 {
 .card-testimonio h5 {
   text-align: left;
   font-size: 18px;
+}
+
+.testomino-comillas {
+  font-family: "BerlinBold";
+  font-weight: 700;
+  line-height: 8px;
 }
 
 .card-testimonio img {
@@ -518,23 +525,53 @@ section h2 {
   flex-grow: 1;
 }
 
-form .form-control {
-  border-radius: 8px;
-  border: 1px solid #ced4da;
+.form-control {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin: 40px 0px;
 }
 
-form button.btn-primary {
-  background-color: var(--primary-color);
-  border: none;
-  width: 100%;
-  border-radius: 50px;
-  margin-top: 20px;
+.form-control::placeholder {
+  color: var(--dark-color);
+  font-weight: 400;
+}
+
+.form-control:focus {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.form-control:active {
+  color: var(--dark-color);
+  background-color: var(--light-color-bg);
+}
+
+form .form-control {
+  padding: 12px 30px;
+  border-radius: 3px;
+  background-color: var(--light-color-bg);
+  /* border: 1px solid var(--dark-color); */
+}
+
+.img-container-form {
+  position: relative;
+  padding-top: 125.3%;
+
 }
 
 /* 9. FOOTER */
 .footer {
   background-color: var(--dark-color);
   font-size: 0.8rem;
+}
+
+.footer-brand {
+  display: block;
+  font-family: "Berlin";
+  color: var(--light-color);
+  text-decoration: none;
+  font-size: 4rem;
+  padding: 10px 20px;
 }
 
 .footer h5 {
@@ -555,6 +592,12 @@ form button.btn-primary {
   margin-top: 32px;
 }
 
+.icon-footer {
+  display: inline;
+  width: 14px;
+  height: 100%;
+}
+
 .footer-p a {
   color: var(--light-color);
 }
@@ -568,6 +611,8 @@ form button.btn-primary {
   color: var(--light-color-2);
   transition: 0.3s;
 }
+
+
 
 /* 10. IMÁGENES */
 img.rounded-circle {
@@ -699,15 +744,15 @@ li {
 
 /* CARRUSEL */
 .swiper-pagination-bullet {
-  background-color: transparent;
-  border: solid 2px var(--primary-color);
-  opacity: 1;
+  background-color: var(--light-color-2);
+  opacity: 0.5;
   width: 12px;
   height: 12px;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
+  opacity: 1;
 }
 
 /* HERO BRINDIS */

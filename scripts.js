@@ -4,6 +4,9 @@ window.addEventListener("scroll", function () {
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 
+// Inicializar wow
+new WOW().init();
+
 // Inicializar swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
