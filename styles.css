@@ -21,6 +21,60 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+/* ANIMACIONES */
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-14px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.img-composed {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.img-composed-1 {
+  animation: float 6s ease-in-out infinite;
+}
+
+.img-composed-2 {
+  animation: float 5.7s ease-in-out infinite;
+}
+
+.img-composed-3 {
+  animation: float 6.7s ease-in-out infinite;
+}
+
+.img-composed-4 {
+  animation: float 5.5s ease-in-out infinite;
+}
+
+.img-composed-5 {
+  animation: float 5.3s ease-in-out infinite;
+}
+
+.img-composed-6 {
+  animation: float 6.3s ease-in-out infinite;
+}
+
+.img-composed-7 {
+  animation: float 5s ease-in-out infinite;
+}
+
+
 /* 1. VARIABLES DE DISEÑO */
 
 :root {
@@ -311,14 +365,6 @@ section h2 {
   position: relative;
   padding-top: 117.7%;
 
-}
-
-.img-composed {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
 }
 
 .suscripcion-bg {
