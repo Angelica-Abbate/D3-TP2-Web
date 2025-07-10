@@ -73,6 +73,11 @@
   z-index: 100;
 }
 
+.a-link {
+  color: var(--dark-color);
+  font-weight: 700;
+}
+
 /* 2. ESTILOS GENERALES */
 body {
   font-family: var(--font-family-base);
@@ -402,12 +407,18 @@ section h2 {
   width: 100%;
 }
 
-.card-testimonio p {
+.card-testimonio>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonio-content {
   text-align: left;
   color: var(--dark-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
+  flex-grow: 1;
 }
 
 .card-testimonio h5 {
@@ -415,10 +426,12 @@ section h2 {
   font-size: 18px;
 }
 
-.testomino-comillas {
-  font-family: "BerlinBold";
+.comillas {
+  text-align: left;
+  color: var(--dark-color);
+  font-size: 40px;
   font-weight: 700;
-  line-height: 8px;
+  line-height: 24px;
 }
 
 .card-testimonio img {
@@ -507,6 +520,91 @@ section h2 {
 .card-text {
   color: #6c757d;
 }
+
+/* MIEMBROS */
+
+/* ULTIMA VERSION */
+.miembros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+
+}
+
+.miembros>img {
+  display: block;
+  width: 19%;
+  margin-right: -3%;
+  margin-left: -3%;
+  object-fit: cover;
+  transition: scale 300ms ease-in-out;
+
+  /* AJUSTAR */
+  aspect-ratio: 4/5;
+  border: solid 9px var(--light-color);
+  box-shadow: 1px 1px 6px 0 rgba(91, 91, 91, 0.67);
+}
+
+.miembros:has(img:hover) img:not(:hover) {
+  scale: .9;
+}
+
+.miembros:has(img:hover) img:hover {
+  scale: 1.2;
+  z-index: 200;
+}
+
+.miembros>img:nth-child(odd) {
+  z-index: 100;
+}
+
+.miembros>img:nth-child(even) {
+  z-index: 50;
+}
+
+.miembros>img:nth-child(1) {
+  margin-top: 0px;
+  transform: rotate(-11deg);
+}
+
+.miembros>img:nth-child(2) {
+  margin-top: -1%;
+  transform: rotate(2deg);
+}
+
+.miembros>img:nth-child(3) {
+  margin-top: 4%;
+  transform: rotate(-0.5deg);
+}
+
+.miembros>img:nth-child(4) {
+  margin-top: -5%;
+  transform: rotate(6deg);
+}
+
+.miembros>img:nth-child(5) {
+  margin-top: 4%;
+  transform: rotate(-5deg);
+}
+
+.miembros>img:nth-child(6) {
+  transform: rotate(3deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .miembros>img {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .miembros>img {
+    width: 50%;
+  }
+}
+
 
 /* 7. TESTIMONIOS */
 .blockquote {
@@ -639,7 +737,7 @@ img.rounded-circle {
 
 /* TITULOS */
 .h1-custom {
-  font-size: 9.6rem;
+  font-size: 9rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.1;
@@ -772,13 +870,13 @@ li {
   width: 770px;
   flex-basis: 770px;
   /* Tamaño Copas 1/2 */
-  height: 700px;
+  height: 670px;
 }
 
 .hero-brindis-img-container {
   width: 100%;
   /* Tamaño Copas 2/2 */
-  height: 860px;
+  height: 760px;
   transform: translateX(60px);
 }
 
