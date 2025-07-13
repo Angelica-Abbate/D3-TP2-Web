@@ -744,6 +744,10 @@ form .form-control {
   font-size: 0.8rem;
 }
 
+.footer-mobile {
+  display: none;
+}
+
 .footer-brand {
   display: block;
   font-family: "Berlin";
@@ -791,6 +795,52 @@ form .form-control {
   transition: 0.3s;
 }
 
+#footer-accordion {}
+
+#footer-accordion .accordion-item {
+  background-color: transparent;
+  border: none !important;
+}
+
+#footer-accordion .accordion-header {}
+
+#footer-accordion .accordion-button {
+  background-color: transparent;
+  color: var(--light-color);
+  padding: 10px;
+  border: none !important;
+  outline: none;
+  box-shadow: none;
+}
+
+#footer-accordion .accordion-button::after {
+  background-image: url('./img/caret-down.svg');
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+#footer-accordion .accordion-collapse {}
+
+#footer-accordion .accordion-body {}
+
+@media (max-width: 768px) {
+  .footer-mobile {
+    display: block;
+  }
+
+  .footer:not(.footer-mobile) {
+    display: none;
+  }
+
+  .footer-mobile .accordion-body {
+    padding: 0;
+  }
+
+  .footer-mobile .btn-link {
+    padding: 6px 10px;
+  }
+}
 
 
 /* 10. IMÁGENES */
@@ -1085,6 +1135,10 @@ li {
 @media (max-width: 768px) {
   .h1-custom {
     font-size: 3.5rem;
+  }
+
+  .h2-custom {
+    font-size: 2rem;
   }
 
   .hero-brindis {
