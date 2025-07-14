@@ -45,7 +45,7 @@ button {
     height: 40px;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     cursor: pointer;
     position: relative;
     display: inline-block;
@@ -66,7 +66,7 @@ button {
     height: 40px;
     border-radius: 5px;
     padding: 10px 25px;
-    background-image: linear-gradient(315deg, #fab2d0 0%, #a30956 84%);
+    background-image: linear-gradient(315deg, #fab2d0 0%, #b90f42 97%);
     line-height: 2px;
     border: none;
 }
@@ -80,7 +80,7 @@ button {
     left: 0;
     bottom: 0;
     border-radius: 5px;
-    background-image: linear-gradient(315deg, #a30956 0%, #fab2d0 84%);
+    background-image: linear-gradient(315deg, #b90f42 0%, #fab2d0 84%);
     z-index: 50;
     opacity: 0;
     transition: opacity 1s ease;
