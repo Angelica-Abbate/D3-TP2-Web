@@ -216,6 +216,20 @@ body::before {
   color: var(--primary-color);
 }
 
+.brand-nav {
+  display: inline-block;
+  height: 60px;
+  width: auto;
+}
+
+.brand-footer {
+  display: inline-block;
+  height: 120px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
 /* 4. HERO */
 .row.p-5 {
   min-height: 90vh;
@@ -825,7 +839,8 @@ form .form-control {
   color: var(--light-color);
   text-decoration: none;
   font-size: 4rem;
-  padding: 10px 20px;
+  padding: 0px 20px;
+  text-align: center;
 }
 
 .footer h5 {
