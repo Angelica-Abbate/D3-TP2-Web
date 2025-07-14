@@ -29,3 +29,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   // gsap code here!
 });
+
+// script de intro
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("bubble-container");
+  const bubbles = container.querySelectorAll(".bubble");
+
+  bubbles.forEach((bubble) => {
+    const size = Math.random() * 40 + 20; // 20 a 60px
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+    bubble.style.left = `${Math.random() * 100}%`;
+
+    gsap.to(bubble, {
+      y: -350,
+      duration: 5 + Math.random() * 4,
+      repeat: -1,
+      ease: "sine.inOut",
+      delay: Math.random() * 2,
+      onRepeat: () => {
+        bubble.style.left = `${Math.random() * 100}%`;
+      },
+    });
+  });
+});

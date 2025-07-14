@@ -2,663 +2,77 @@
 <html lang="es">
 
 <head>
-  <!-- Configuración básica del documento -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angelica Abbate - UvaClub</title>
 
-  <!-- Tipografía desde Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Framework CSS de Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Angelica Abbate - Entrega Belluccia III</title>
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- WOW animate -->
-  <link rel="stylesheet" href="lib/animate/animate.min.css">
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Icon Font Stylesheet -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="styles.css">
+    <!-- WOW animate -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="intro.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
 </head>
 
 <body>
 
-  <!-- NAVBAR: Menú de navegación fijo superior -->
-  <nav class="navbar navbar-expand-lg fixed-top mobile">
+
+    <!-- Page Content -->
     <div class="container">
-      <!-- Logo o nombre del sitio -->
-      <a class="navbar-brand" href="#">UvaClub</a>
-      <!-- Botón para mostrar menú en mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Ítems del menú -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Experiencias</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-        </ul>
-      </div>
+
+        <div class="row">
+            <div class="col-lg-12 text-center" style="margin-top:100px">
+                <h2 class="lead">Página de suscripción - UvaClub</h2>
+                <h3 class="lead mb-3">TP2 - Belluccia III</h3>
+                <h1 class="mb-4">Angelica Abbate</h1>
+                <div class="mb-2">
+                    <button class="custom-btn btn-main" href="./home.html"><span>Home</span></button>
+                    <button class="custom-btn btn-main" href="./detalle.html"><span>Detalle</span></button>
+                </div>
+                <div class="mb-0">
+                    <a class="btn btn-second" href="https://htmlcodex.com/demo/?item=2727">Template utilizado</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-  <!-- /NAVBAR -->
-
-  <!-- NAVBAR DESKTOP -->
-  <nav class="navbar navbar-expand-lg fixed-top desktop">
-    <div class="container">
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav d-flex align-items-center">
-          <!-- Menú izquierda -->
-          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
-
-          <!-- Logo en el centro -->
-          <li class="nav-item mx-3">
-            <a class="navbar-brand navbar-brand-desktop" href="#">UvaClub</a>
-          </li>
-
-          <!-- Menú derecha -->
-          <li class="nav-item"><a class="nav-link" href="#">Experiencias</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-        </ul>
-      </div>
-
-      <!-- Botón mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div>
+        <div id="bubble-container">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
     </div>
-  </nav>
+    <!-- Librerías -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
 
+    <!-- Script -->
+    <script src="scripts.js"></script>
 
-  <!-- HERO: Sección de portada con llamado a la acción -->
-  <section class="section-spacing p-relative d-flex overflow-h justify-content-center align-items-center"
-    style="min-height: 100vh; padding-top: 100px;">
-
-    <div class="hero-bg">
-
-    </div>
-
-    <div class="hero-main">
-      <!-- Texto principal -->
-      <h1 class="h1-custom">una suscripción<br>múltiples brindis</h1>
-      <div>
-        <p class="lead-custom">Lo mejor del vino llega a la puerta de tu casa<br>La excusa para brindar la ponés vos</p>
-        <div class="d-flex gap-3 mt-4">
-          <a href="#" class="btn m-auto wow fadeIn" data-wow-duration="0.3s" data-wow-delay="1.5s"><span>Únete al
-              club</span></a>
-        </div>
-      </div>
-      <!-- Imagen destacada -->
-      <!-- <div class="col-lg-6 text-center">
-        <img src="https://imageplaceholder.net/500x500" class="img-fluid img-rounded" alt="Imagen Hero">
-      </div> -->
-    </div>
-
-    <div class="hero-brindis">
-      <div>
-        <div class="hero-brindis-img-container">
-          <img src="img/imghero-2.png" class="hero-brindis-img wow bounceInLeft" data-wow-delay="0.3s" alt="">
-        </div>
-      </div>
-      <div>
-        <div class="hero-brindis-img-container hero-brindis-img-container-right">
-          <img src="img/imghero-1.png" class="hero-brindis-img hero-brindis-img-right wow bounceInRight"
-            data-wow-delay="0.5s" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /HERO -->
-
-  <!-- ABOUT: Sección sobre nosotros -->
-  <section class="section-spacing container text-center wow fadeIn mt-1" data-wow-delay="0.2s">
-    <h2 class=" h2-custom">Unirte es así de fácil</h2>
-    <p class="mb-4 p-custom">Solo tenés que seguir estos pasos:</p>
-    <div class="row">
-      <!-- Tres columnas informativas -->
-      <div class="col-md-4">
-        <img src="img/gif-1.gif" class="img-fluid img-rounded mb-3 img-icon-lg wow fadeIn" data-wow-delay="0.3s"
-          alt="Imagen ilustrativa">
-        <h4 class="h4-custom">Suscríbete</h4>
-        <p class="p-custom">Al plan que más se adapta a vos</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/gif-2.gif" class="img-fluid img-rounded mb-3 img-icon-lg wow fadeIn" data-wow-delay="0.4s"
-          alt="Imagen ilustrativa">
-        <h4 class="h4-custom">Recibe</h4>
-        <p class="p-custom">Una caja con vinos seleccionados</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/gif-3.gif" class="img-fluid img-rounded mb-3 img-icon-lg wow fadeIn" data-wow-delay="0.5s"
-          alt="Imagen ilustrativa">
-        <h4 class="h4-custom">Disfruta</h4>
-        <p class="p-custom">De nuevas bodegas sin salir de casa</p>
-      </div>
-    </div>
-  </section>
-  <!-- /ABOUT -->
-
-  <!-- PORQUE UVACLUB -->
-  <section class="section-spacing container wow fadeIn" data-wow-delay="0.2s">
-    <div class="row align-items-center">
-      <!-- Columna de imagen -->
-      <div class="col-lg-6 text-center order-2-mobile mb-lg-0">
-        <div class="img-container">
-          <img src="img/imgpq-1.png" class="img-composed img-composed-1" alt="Imagen ilustrativa">
-          <img src="img/imgpq-2.png" class="img-composed img-composed-2" alt="Imagen ilustrativa">
-          <img src="img/imgpq-3.png" class="img-composed img-composed-3" alt="Imagen ilustrativa">
-          <img src="img/imgpq-4.png" class="img-composed img-composed-4" alt="Imagen ilustrativa">
-          <img src="img/imgpq-5.png" class="img-composed img-composed-5" alt="Imagen ilustrativa">
-          <img src="img/imgpq-6.png" class="img-composed img-composed-6" alt="Imagen ilustrativa">
-          <img src="img/imgpq-7.png" class="img-composed img-composed-7" alt="Imagen ilustrativa">
-        </div>
-      </div>
-      <!-- Columna de texto -->
-      <div class="col-lg-6">
-        <h2 class="h2-custom display-5 mb-4" class="h2-custom">¿Porqué nuestra caja?</h2>
-        <ul class="list-unstyled">
-          <li class="d-flex flex-nowrap align-items-center mb-4 wow fadeIn" data-wow-delay="0.4s">
-            <img class="img-icon" src="img/check.svg" alt="check">
-            <div class="pl-2">
-              <h5>Vinos seleccionados por sommeliers</h5>
-              <p class="p-custom mb-0">Cuidadosamente elegidos para complacerte cada mes.</p>
-            </div>
-          </li>
-          <li class="d-flex flex-nowrap align-items-center mb-4 wow fadeIn" data-wow-delay="0.5s">
-            <img class="img-icon" src="img/check.svg" alt="check">
-            <div class="pl-2">
-              <h5>Experiencia de cata guiada en tu hogar</h5>
-              <p class="p-custom mb-0">Con material sensorial y videos exclusivos.</p>
-            </div>
-          </li>
-          <li class="d-flex flex-nowrap align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-            <img class="img-icon" src="img/check.svg" alt="check">
-            <div class="pl-2">
-              <h5>Programa WineSwap</h5>
-              <p class="p-custom mb-0">Para intercambiar botellas duplicadas entre socios.</p>
-            </div>
-          </li>
-          <li class="d-flex flex-nowrap align-items-center mb-4 wow fadeIn" data-wow-delay="0.7s">
-            <img class="img-icon" src="img/check.svg" alt="check">
-            <div class="pl-2">
-              <h5>Cupones de descuento</h5>
-              <p class="p-custom mb-0">De hasta un 10% en vinotecas asociadas.</p>
-            </div>
-          </li>
-          <li class="d-flex flex-nowrap align-items-center mb-4 wow fadeIn" data-wow-delay="0.8s">
-            <img class="img-icon" src="img/check.svg" alt="check">
-            <div class="pl-2">
-              <h5>Pertenecer a esta gran comunidad</h5>
-              <p class="p-custom mb-0">Comparte el gusto por descubrir y aprender de vinos.</p>
-            </div>
-          </li>
-        </ul>
-        <!-- <a href="#" class="btn btn-primary mt-3">Saber más</a> -->
-      </div>
-    </div>
-  </section>
-
-  <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-  <section class="p-relative">
-    <div class="suscripcion-bg p-relative">
-      <div class="subscription-bg-element"></div>
-      <div class="section-spacing container text-center p-relative wow fadeIn" data-wow-delay="0.2s">
-
-        <h2 class="h2-custom">Los planes que ofrecemos</h2>
-        <p class="p-custom">Elegí la suscripción que se adapte mejor a lo que buscas</p>
-
-        <div class="row mt-5">
-
-          <!-- Card: Curioso -->
-          <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.4s">
-            <div class="suscripcion-card suscripcion-curioso card p-4 h-100">
-              <!-- Título y precio -->
-              <div class="z-index-100 p-relative suscripcion-card-header">
-                <h3 class="h3-custom mb-0">Curioso</h3>
-                <h4 class="h4-custom">2 botellas al mes</h4>
-                <p class="p-custom mb-0">
-                  Selección accesible y fácil de tomar
-                </p>
-              </div>
-
-              <!-- Imagen ilustrativa -->
-              <img src="img/card-box-1.png" class="img-fluid img-rounded mt-4 img-composed-1" alt="Curioso">
-
-              <!-- Descripción -->
-
-              <!-- Lista de beneficios -->
-              <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-                <li>✔ Programa WineSwap.</li>
-                <li>✔ Fichas de cata guiada.</li>
-                <li>✔ QR a video de sommelier.</li>
-                <li>✔ Cupones de descuento.</li>
-              </ul>
-              <p class="prices mb-0 dark-color">$39.000 <small>/ mes</small></p>
-
-              <!-- Botón CTA -->
-              <a href="#" class="btn btn-curioso m-auto btn-primary"><span>Unirme</span></a>
-            </div>
-          </div>
-
-          <!-- Card: Entusiasta (Recomendado) -->
-          <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.6s">
-            <div class="suscripcion-card suscripcion-entusiasta card p-4 h-100">
-              <!-- Título y precio -->
-              <!-- <span class="badge bg-primary ms-2">Recomendado</span> -->
-              <div class="z-index-100 p-relative suscripcion-card-header">
-                <h3 class="h3-custom mb-0">Entusiasta </h3>
-                <h4 class="h4-custom">3 botellas al mes</h4>
-                <p class="p-custom mb-0">
-                  Vinos por región, cepa o estilo
-                </p>
-              </div>
-
-              <!-- Imagen ilustrativa -->
-              <img src="img/card-box-2.png" class="img-fluid img-rounded mt-4 img-composed-1" alt="Entusiasta">
-
-              <!-- Descripción -->
-
-              <!-- Lista de beneficios -->
-              <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-                <li>✔ Programa WineSwap.</li>
-                <li>✔ Fichas de cata guiada.</li>
-                <li>✔ QR a video de sommelier.</li>
-                <li>✔ Cupones de descuento.</li>
-                <li>✔ Maridaje de quesos exclusivos.</li>
-                <p class="display-6 mb-0 dark-color">$55.000 <small>/ mes</small></p>
-              </ul>
-
-              <!-- Botón CTA -->
-              <a href="#" class="btn m-auto btn-primary"><span>Unirme</span></a>
-            </div>
-          </div>
-
-          <!-- Card: Apasionado -->
-          <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.8s">
-            <div class="suscripcion-card suscripcion-apasionado card p-4 h-100">
-              <!-- Título y precio -->
-              <div class="z-index-100 p-relative suscripcion-card-header">
-                <h3 class="h3-custom mb-0">Apasionado</h3>
-                <h4 class="h4-custom">3 botellas al mes</h4>
-                <p class="p-custom mb-0">
-                  Desafíos sensoriales, vinos inusuales
-                </p>
-              </div>
-
-              <!-- Imagen ilustrativa -->
-              <img src="img/card-box-3.png" class="img-fluid img-rounded mt-4 img-composed-1" alt="Apasionado">
-
-              <!-- Descripción -->
-
-              <!-- Lista de beneficios -->
-              <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-                <li>✔ Programa WineSwap.</li>
-                <li>✔ Fichas de cata guiada.</li>
-                <li>✔ QR a video de sommelier.</li>
-                <li>✔ Cupones de descuento.</li>
-                <li>✔ Maridaje de quesos exclusivos.</li>
-                <p class="display-6 mb-0 dark-color">$69.000 <small>/ mes</small></p>
-              </ul>
-
-              <!-- Botón CTA -->
-              <a href="#" class="btn btn-apasionado m-auto btn-primary"><span>Unirme</span></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /PLANES DE SUSCRIPCIÓN -->
-
-  <!-- PROGRAMA WINESWAP -->
-  <section class="section-spacing container text-center wow fadeIn" data-wow-delay="0.2s">
-    <h2 class="h2-custom">Programa WineSwap</h2>
-    <p class="p-custom">¿Tenés una botella duplicada? intercámbiala con otros miembros del club.<br><span
-        class="fw-bold">¡Con un envío
-        gratis al mes!</span></p>
-    <div class="text-center mb-4 wow fadeIn" data-wow-delay="0.4s">
-      <img src="https://imageplaceholder.net/500x400" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-    <div class=" d-flex justify-content-center gap-3">
-      <a href="#" class="btn btn-primary wow fadeIn" data-wow-delay="0.6s">Intercambiar</a>
-    </div>
-  </section>
-  <!-- INICIO MIEMBROS -->
-  <section class="section-spacing text-center py-5 wow fadeIn" data-wow-delay="0.2s">
-    <h2 class="text-uppercase h2-custom">Algunos miembros del club</h2>
-    <p class="p-custom mb-5">¿Quieres aparecer? sube tu foto en instagram bebiendo tus vinos del mes y
-      etiquétanos <a class="a-link" href="">@UvaClub</a></p>
-
-    <div class="miembros wow fadeIn" data-wow-delay="0.4s">
-      <img src="img/miembro-1.png" />
-      <img src="img/miembro-5.png" />
-      <img src="img/miembro-4.png" />
-      <img src="img/miembro-2.png" />
-      <img src="img/miembro-6.png" />
-      <img src="img/miembro-3.png" />
-    </div>
-  </section>
-  <!-- FIN MIEMBROS -->
-
-  <!-- TESTIMONIOS -->
-  <section class="section-spacing text-center py-5 wow fadeIn" data-wow-delay="0.2s">
-    <h2 class="text-uppercase h2-custom mb-4">Testimonios</h2>
-    <div class="swiper mySwiper swiper-testimonios">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide-testimonio pb-3 ">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-1.jpg" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Muy bueno para empezar a probar en serio y salir
-                de lo típico.</p>
-              <h5 class="mb-0">Agustin R.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3 ">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-2.png" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Los vinos llegan bien embalados, la caja es
-                hermosa y siempre hay algo que me
-                sorprende.
-              </p>
-              <h5 class="mb-0">Diego L.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3 ">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-3.jpg" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Muy buena selección y el material que mandan me
-                ayuda a entender lo que tomo.</p>
-              <h5 class="mb-0">Juan Manuel C.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3 ">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-4.jpg" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Perfecto para una copa tranquila después del
-                trabajo. ¡Los vinos son increíbles!
-              </p>
-              <h5 class="mb-0">Agustina B.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3 ">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-5.jpg" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Empecé por curiosidad y ahora estoy enganchada.
-                ¡Todo llega perfecto y es fácil
-                de
-                disfrutar!</p>
-              <h5 class="mb-0">Jack B.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3 ">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-6.png" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Las cajas del Plan Apasionado son como un regalo
-                que me hago todos los meses.</p>
-              <h5 class="mb-0">Aurora A.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-7.jpg" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Me ayudó a perderle el miedo al vino y a
-                entender
-                que me gusta y que no</p>
-              <h5 class="mb-0">Benito M.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-8.png" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Nunca pensé que me engancharía a tomar vino.
-                Selecciones re fáciles de disfrutar,
-                muy
-                bien elegidas.</p>
-              <h5 class="mb-0">Dua L.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-9.jpg" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Me animé con el Plan Curioso y cada mes descubro algo distinto que me
-                sorprende.</p>
-              <h5 class="mb-0">Henry C.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-testimonio pb-3">
-          <div class="card-testimonio h-100 d-flex flex-nowrap">
-            <img src="img/testimonio-10.jpg" alt="">
-            <div class="p-3">
-              <p class="comillas mb-0">"</p>
-              <p class="testimonio-content mb-0">Buen equilibrio de vinos conocidos y nuevos desafíos para el paladar.
-              </p>
-              <h5 class="mb-0">Emily A.</h5>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </section>
-
-  <!-- CTA: Llamado a la acción final -->
-  <section class="section-spacing container text-center my-5">
-    <h2 class="h2-custom">¿Listo para empezar?</h2>
-    <p class="p-custom">Texto para motivar acción.</p>
-    <a href="#" class="btn btn-dark mt-4">Comenzá Ahora</a>
-  </section>
-  <!-- /CTA -->
-
-  <!-- CONTACT FORM: Formulario de contacto -->
-  <section class="section-spacing container text-center wow fadeIn" data-wow-delay="0.2s">
-    <h2 class="h2-custom">Déjanos tu consulta</h2>
-    <p class="p-custom">Estaremos encantados de ayudarte :)</p>
-    <div class="d-flex flex-nowrap contact-container align-items-center">
-
-      <div class="justify-content-center contact-form">
-        <div>
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control wow fadeIn" data-wow-delay="0.3s" placeholder="Tu nombre">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control wow fadeIn" data-wow-delay="0.4s" placeholder="Tu email">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control wow fadeIn" data-wow-delay="0.5s"
-                placeholder="Tu teléfono (opcional)">
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control wow fadeIn" data-wow-delay="0.6s" rows="6"
-                placeholder="Tu mensaje"></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark wow fadeIn" data-wow-delay="0.7s">Enviar Mensaje</button>
-          </form>
-        </div>
-      </div>
-      <div class="col-lg-6 text-center desktop mb-lg-0">
-        <div class="img-container-form">
-          <img src="img/imgform-1.png" class="img-composed img-composed-1" alt="Imagen ilustrativa">
-          <img src="img/imgform-2.png" class="img-composed img-composed-2" alt="Imagen ilustrativa">
-          <img src="img/imgform-3.png" class="img-composed img-composed-3" alt="Imagen ilustrativa">
-          <img src="img/imgform-4.png" class="img-composed img-composed-4" alt="Imagen ilustrativa">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /CONTACT FORM -->
-
-  <!-- FOOTER: Pie de página -->
-  <div class="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3 desktop">
-          <a class="footer-brand" href="#">UvaClub</a>
-        </div>
-        <div class="col-lg-3 col-4">
-          <h5>Categorías</h5>
-          <a class="footer-btn btn-link" href="">Inicio </a>
-          <a class="footer-btn btn-link" href="">Suscripciones</a>
-          <a class="footer-btn btn-link" href="">Experiencias</a>
-          <a class="footer-btn btn-link" href="">Miembros del club</a>
-          <a class="footer-btn btn-link" href="">Sobre nosotros</a>
-        </div>
-        <div class="col-lg-3 col-4">
-          <h5>Ayuda</h5>
-          <a class="footer-btn btn-link" href="">Formas de pago</a>
-          <a class="footer-btn btn-link" href="">Formas de envío</a>
-          <a class="footer-btn btn-link" href="">Preguntas frecuentes</a>
-          <a class="footer-btn btn-link" href="">Términos del servicio</a>
-          <a class="footer-btn btn-link" href="">Botón de arrepentimiento</a>
-        </div>
-        <div class="col-lg-3 col-4">
-          <h5>Contáctanos</h5>
-          <a class="footer-btn btn-link" href=""><img src="img/whatsapp.svg" class="icon-footer me-3">541112345678</a>
-          <a class="footer-btn btn-link" href=""><i class="fa fa-phone-alt me-3"></i>+54 11 1234 5678</a>
-          <a class="footer-btn btn-link" href=""><i class="fa fa-envelope me-3"></i>contacto@uvaclub.com</a>
-        </div>
-
-        <!-- MOBILE   -->
-        <div class="col-lg-12 mobile">
-          <a class="navbar-brand" href="#">UvaClub</a>
-        </div>
-      </div>
-    </div>
-    <p class="footer-p">&copy; 2025
-      <a class="border-bottom" href="https://www.instagram.com/catedrabelluccia/?hl=es" target="_blank">Cátedra
-        Belluccia</a> - Angelica Abbate - Comisión 1
-    </p>
-  </div>
-
-  <div class="footer footer-mobile">
-    <div class="accordion" id="footer-accordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            CATEGORÍAS
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <a class="footer-btn btn-link" href="">Inicio </a>
-            <a class="footer-btn btn-link" href="">Suscripciones</a>
-            <a class="footer-btn btn-link" href="">Experiencias</a>
-            <a class="footer-btn btn-link" href="">Miembros del club</a>
-            <a class="footer-btn btn-link" href="">Sobre nosotros</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            AYUDA
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <a class="footer-btn btn-link" href="">Formas de pago</a>
-            <a class="footer-btn btn-link" href="">Formas de envío</a>
-            <a class="footer-btn btn-link" href="">Preguntas frecuentes</a>
-            <a class="footer-btn btn-link" href="">Términos del servicio</a>
-            <a class="footer-btn btn-link" href="">Botón de arrepentimiento</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            CONTÁCTANOS
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <a class="footer-btn btn-link" href=""><img src="img/whatsapp.svg" class="icon-footer me-3">541112345678</a>
-            <a class="footer-btn btn-link" href=""><i class="fa fa-phone-alt me-3"></i>+54 11 1234 5678</a>
-            <a class="footer-btn btn-link" href=""><i class="fa fa-envelope me-3"></i>contacto@uvaclub.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p class="footer-p">&copy; 2025
-      <a class="border-bottom" href="https://www.instagram.com/catedrabelluccia/?hl=es" target="_blank">Cátedra
-        Belluccia</a> - Angelica Abbate - Comisión 1
-    </p>
-  </div>
-
-  <!-- /FOOTER -->
-
-  <!-- Bootstrap Bundle JS (incluye Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-
-  <!-- Script personalizado para cambiar el navbar al hacer scroll -->
-  <script>
-    window.addEventListener('scroll', function () {
-      const nodes = document.querySelectorAll('.navbar');
-      nodes.forEach(function (navbar) {
-        navbar.classList.toggle('scrolled', window.scrollY > 50);
-      })
-
-    });
-  </script>
-  <!-- WOW animate -->
-  <script src="lib/wow/wow.min.js"></script>
-
-  <!-- Librerías -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Script -->
-  <script src="scripts.js"></script>
 </body>
 
 </html>
