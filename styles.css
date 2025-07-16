@@ -310,11 +310,12 @@ li {
   padding: 8px 20px 9px 20px;
   background: var(--primary-color) !important;
   color: var(--light-color);
-
+  font-size: 18px;
   transition: all 0.3s ease-in-out;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   border: none;
-  text-transform: uppercase;
+  font-family: "BerlinRegular";
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
 }
 
@@ -324,6 +325,7 @@ li {
 
 .btn span {
   font-weight: 400 !important;
+  opacity: .9;
 }
 
 /* .btn {
@@ -348,18 +350,20 @@ li {
   top: 0;
   background-size: cover;
   height: 100%;
-  width: 20px;
+  width: 19px;
 }
 
 .btn::after {
-  right: -18px;
+  right: -15px;
   background-image: url(/img/btn-end.svg);
+  background-repeat: no-repeat;
 
 }
 
 .btn::before {
-  left: -18px;
+  left: -15px;
   background-image: url(/img/btn-start.svg);
+  background-repeat: no-repeat;
 
 }
 
@@ -831,6 +835,7 @@ section h2 {
   background-repeat: no-repeat;
   position: relative;
   margin: 0;
+  z-index: -50;
 }
 
 .cta-section .container {
@@ -864,7 +869,6 @@ section h2 {
   background-size: auto 100%;
   /* se puede cambiar */
   background-position: center bottom;
-  z-index: 200;
 }
 
 .form-section {
@@ -882,7 +886,6 @@ section h2 {
   background-size: auto 100%;
   /* se puede cambiar */
   background-position: center top;
-  z-index: 200;
 }
 
 
