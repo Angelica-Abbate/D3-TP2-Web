@@ -23,20 +23,6 @@
 
 /* ANIMACIONES */
 
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-
-  50% {
-    transform: translatey(-14px);
-  }
-
-  100% {
-    transform: translatey(0px);
-  }
-}
-
 .img-composed {
   position: absolute;
   right: 0;
@@ -83,7 +69,7 @@
   --curioso-color-bg: #f5e2d2;
   --apasionado-color: #170349;
   --apasionado-color-bg: #ded8ee;
-  --light-color: #f5f3f0;
+  --light-color: #fff8e8;
   --light-color-2: #f7bebe;
   --light-color-bg: rgba(178, 170, 211, 0.3);
   --dark-color: #170349;
@@ -121,6 +107,10 @@
 
 .mt-6 {
   margin-top: 66px;
+}
+
+.mt-4-5 {
+  margin-top: 32px;
 }
 
 .overflow-h {
@@ -203,7 +193,7 @@ body {
 .navbar {
   background-color: transparent;
   transition: background-color 0.3s, box-shadow 0.3s;
-  padding: 15px 0;
+  padding: 12px 0;
 }
 
 .navbar.scrolled {
@@ -324,7 +314,7 @@ li {
 }
 
 .btn span {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   opacity: .9;
 }
 
@@ -455,7 +445,19 @@ section h2 {
   position: relative;
 }
 
-.img-container {
+.about-img-container {
+  position: relative;
+  padding-top: 71.7%;
+
+}
+
+.pq-img-container {
+  position: relative;
+  padding-top: 90.9%;
+
+}
+
+.form-img-container {
   position: relative;
   padding-top: 117.7%;
 
@@ -960,6 +962,10 @@ form .form-control {
   position: relative;
   padding-top: 125.3%;
 
+}
+
+.img-container-about {
+  width: 100%;
 }
 
 /* 9. FOOTER */
