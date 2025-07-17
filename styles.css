@@ -165,6 +165,7 @@
   }
 }
 
+
 /* 2. ESTILOS GENERALES */
 body {
   font-family: var(--font-family-base);
@@ -914,6 +915,7 @@ section h2 {
   background-size: auto 100%;
   /* se puede cambiar */
   background-position: center bottom;
+  left: 0;
 }
 
 .form-section {
@@ -931,6 +933,7 @@ section h2 {
   background-size: auto 100%;
   /* se puede cambiar */
   background-position: center top;
+  left: 0;
 }
 
 
@@ -1482,6 +1485,88 @@ li {
     transform: translateX(10px);
   }
 
+  .section-spacing {
+    padding: 50px 12px;
+  }
+
+  .img-icon-lg-detail {
+    height: 140px;
+  }
+
+  .text-center-responsive {
+    text-align: center;
+  }
+
+  .center-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h1-custom {
+    margin-top: -14px;
+  }
+
+  .h3-custom {
+    font-size: 2.2rem;
+  }
+
+  .pq-list h5 {
+    font-size: 1.1rem;
+  }
+
+  .mb-card-responsive {
+    margin-bottom: 90px !important;
+  }
+
+  .about-img-responsive {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .mt-detail-responsive-1 {
+    margin-top: 22px;
+  }
+
+  .mt-detail-responsive-2 {
+    margin-top: 0px;
+  }
+
+  .mt-cta-responsive {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .hero-bg {
+    background-image: url(img/hero-bg-mobile.svg);
+    height: 61vh;
+  }
+
+  .detail-bg {
+    background-image: url(img/detail-bg-mobile.svg);
+  }
+
+  .subscription-bg-element::after {
+    bottom: -34px;
+    height: 34px;
+  }
+
+  .subscription-bg-element::before {
+    top: -34px;
+    height: 34px;
+  }
+
+  .testimonios-section::before {
+    bottom: -34px;
+    height: 34px;
+
+  }
+
+  .form-section::after {
+    top: -34px;
+    height: 34px;
+
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1520,6 +1605,10 @@ li {
 
 @media screen and (max-width: 510px) {
   .lead-custom {
+    font-size: 1.2rem;
+  }
+
+  .p-custom {
     font-size: 1rem;
   }
 
