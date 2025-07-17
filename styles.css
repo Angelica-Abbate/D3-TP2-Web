@@ -873,7 +873,7 @@ section h2 {
 
 .cta-section {
   height: 88vh;
-  ´position: relative;
+  position: relative;
   background-image: url('img/cta-bg.png');
   background-size: cover;
   background-attachment: fixed;

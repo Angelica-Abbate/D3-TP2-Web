@@ -20,9 +20,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// Inicializar wow
+new WOW().init();
+
 // inicializar GSAP
-// use a script tag or an external JS file
-document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-  // gsap code here!
-});
