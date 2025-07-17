@@ -101,12 +101,20 @@
   padding-left: 0.7rem;
 }
 
+.pl-4 {
+  padding-left: 28px;
+}
+
 .pb-3 {
   margin-bottom: 40px;
 }
 
 .mt-6 {
   margin-top: 66px;
+}
+
+.mb-6 {
+  margin-bottom: 66px;
 }
 
 .mt-4-5 {
@@ -136,7 +144,7 @@
 }
 
 .semibold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .light-color {
@@ -145,6 +153,16 @@
 
 .tachado {
   text-decoration: line-through;
+}
+
+.mt-6-desktop {
+  margin-top: 40px;
+}
+
+@media (max-width: 1400px) {
+  .mt-6-desktop {
+    margin-top: 24px;
+  }
 }
 
 /* 2. ESTILOS GENERALES */
@@ -282,6 +300,19 @@ li {
 .hero-bg {
   background-image: url(img/hero-bg.svg);
   height: 86vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center bottom;
+  /* opacity: 0.7; */
+  mix-blend-mode: multiply;
+}
+
+.detail-bg {
+  background-image: url(img/detail-bg.svg);
+  height: 75vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -454,6 +485,18 @@ section h2 {
 .pq-img-container {
   position: relative;
   padding-top: 90.9%;
+
+}
+
+.suscription-img-container {
+  position: relative;
+  padding-top: 90.5%;
+
+}
+
+.detail-text-img-container {
+  position: relative;
+  padding-top: 58.2%;
 
 }
 
@@ -1105,6 +1148,10 @@ img.rounded-circle {
   color: var(--dark-color);
 }
 
+.h2-custom-detalle {
+  font-size: 3.3rem;
+}
+
 .h3-custom {
   font-family: "BerlinRegular";
   font-size: 2.5rem;
@@ -1142,7 +1189,7 @@ h5 {
 .p-custom {
   font-size: 18px;
   color: var(--dark-color);
-  line-height: 1;
+  line-height: 1.4;
 }
 
 .lead-custom {
@@ -1153,6 +1200,7 @@ h5 {
 
 .prices {
   font-size: 2.5em;
+  font-weight: 600;
 }
 
 /* FONDOS E IMÁGENES */
